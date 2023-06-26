@@ -1,0 +1,113 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Nameless V1.2", "DarkTheme")
+
+--- Tab 1
+
+local Tab = Window:NewTab("Home")
+local Section = Tab:NewSection("Players")
+Section:NewSlider("WalkSpeed", "SliderInfo", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("JumpPower", "SliderInfo", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+Section:NewButton("Reset", "ButtonInfo", function()
+--created by mr_IKAR#2021
+--for Tribver Hub
+--join - discord.gg/QW5dR3jP9x
+
+local plr = game.Players.LocalPlayer --tells the script what plr is
+local humanoid = plr.Character.Humanoid
+local position = plr.Character.HumanoidRootPart.CFrame
+wait(0.1)
+humanoid:Destroy()
+plr:ClearAllChildren() --clears all of the plr instance aka the local player
+wait(5.25)
+plr.Character.HumanoidRootPart.CFrame = position
+    end
+  end)
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("Universal Fly", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MsL78SwX"))()
+    print("Clicked")
+end)
+Section:NewButton("Universal ShiftLock", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QuzRq57a"))();
+    print("Clicked")
+end)
+Section:NewButton("Universal Hitbox", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Universal ESP", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/esp-unversal/main/script'),true))()
+    print("Clicked")
+end)
+Section:NewButton("Universal Keystrokes", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastefy.app/Te4dwSw2/raw'),true))()
+    print("Clicked")
+end)
+Section:NewButton("Universal PC Keyboard", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Admins")
+Section:NewButton("Nameless Admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-10833"))()
+    print("Clicked")
+end)
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Games")
+Section:NewButton("Brookhaven RP", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    print("Clicked")
+end)
+Section:NewButton("Adopt me", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    print("Clicked")
+end)
+Section:NewButton("Blox Fruits", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NeaPchX2/Playback-X-HUB/main/Protected.lua.txt"))()
+    print("Clicked")
+end)
+Section:NewButton("Bedwars", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Arsenal", "ButtonInfo", function()
+-- [[ CHECK THE DESCRIPTION FOR OTHER SOURCES ]]--
+--[[ Ill just put the arsenal script keyless and source in here ]]--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RiseValco/keybypasses/main/devhub/Arsenal.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Evade", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()  
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Hubs")
+Section:NewButton("Vhub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))() 
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Guis")
+Section:NewButton("FE Yeet Gui", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+    print("Clicked")
+end)
+Section:NewButton("FE ChatHax", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
+    print("Clicked")
+end)
+
+-- Tab 2
+
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+Section:NewKeybind("ToggleUI Keybind", "KeybindInfo", Enum.KeyCode.Q, function()
+	Library:ToggleUI()
+end)
